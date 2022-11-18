@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display the item of Dropdown</title>
+  </head>
+  <body>
+    <form>
+      Select your favorite Color :
+      <select id="mySelect">
+        <option>Red</option>
+        <option>Green</option>
+        <option>Blue</option>
+        <option>White</option>
+        <option>Mudassir</option>
+      </select>
+      <input
+        type="button"
+        onclick="getOptions()"
+        value="Count and Output all items"
+      />
+    </form>
+
+    <script>
+      function getOptions() {
+        var count=document.getElementById("mySelect");
+        var txt1 = "No. of items : ";
+        var i;
+        l=document.getElementById("mySelect").length;  
+        txt1 = txt1+l;
+        for (i=0;i<count.length;i++)
+        {
+            txt1 = txt1 + "\n" + count.options[i].text;
+        }
+        alert(txt1);
+      }
+    </script>
+  </body>
+</html>
