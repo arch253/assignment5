@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JS DOM paragraph style</title>
+  </head>
+  <body>
+    <p id="text">JavaScript Exercises - w3resource</p>
+    <div>
+      <button id="jsstyle" onclick="js_style()">Style</button>
+      <script>
+        function js_style() {
+          let x = document.getElementById("text");
+          x.innerHTML = "Text Change"
+          x.style.fontSize = "30px";
+          x.style.color = "pink";
+        }
+      </script>
+    </div>
+  </body>
+</html>
